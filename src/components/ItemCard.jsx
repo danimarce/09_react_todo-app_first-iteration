@@ -2,7 +2,6 @@ import styles from "./ItemCard.module.css"
 
 export const ItemCard = ({ item }) => {
   const { title, description, status } = item;
-  console.log(status)
 
   const titleClass =
     status === "done"
@@ -22,7 +21,6 @@ export const ItemCard = ({ item }) => {
       ? `${styles["item__status--grey"]}`
       : "";
 
-  console.log(titleClass, statusClass)
 
   return (
     <>
