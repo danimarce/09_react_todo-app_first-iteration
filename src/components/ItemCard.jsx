@@ -1,25 +1,28 @@
-const styles = "";
+import styles from "./ItemCard.module.css"
 
 export const ItemCard = ({ item }) => {
   const { title, description, status } = item;
+  console.log(status)
 
   const titleClass =
-    title === "done"
-      ? `${styles["test1"]}`
-      : title === "in progress"
-      ? `${styles["test2"]}`
-      : title === "pending"
-      ? `${styles["test3"]}`
+    status === "done"
+      ? `${styles["item__title--strikethrough"]}`
+      : status === "in progress"
+      ? `${styles["item__title--bold"]}`
+      : status === "pending"
+      ? `${styles["item__title--regular"]}`
       : "";
 
   const statusClass =
     status === "done"
-      ? `${styles["test1"]}`
+      ? `${styles["item__status--green"]}`
       : status === "in progress"
-      ? `${styles["test2"]}`
+      ? `${styles["item__status--blue"]}`
       : status === "pending"
-      ? `${styles["test3"]}`
+      ? `${styles["item__status--grey"]}`
       : "";
+
+  console.log(titleClass, statusClass)
 
   return (
     <>

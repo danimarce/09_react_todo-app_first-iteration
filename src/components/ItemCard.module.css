@@ -1,0 +1,23 @@
+.item__title--strikethrough {
+  text-decoration: line-through;
+}
+
+.item__title--bold {
+  font-weight: bold;
+}
+
+.item__title--regular {
+  font-weight: normal;
+}
+
+.item__status--green {
+  color: green;
+}
+
+.item__status--blue {
+  color: blue;
+}
+
+.item__status--grey {
+  color: grey;
+}
