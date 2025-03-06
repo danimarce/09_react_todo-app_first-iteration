@@ -1,3 +1,35 @@
+.itemCard__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #424243;
+  border-radius: .5rem;
+  gap: 1rem;
+}
+
+.item__title {
+  font-size: 1.25rem;
+  color: #FFF;
+}
+
+.item__description {
+  color: #FFFEFE;
+}
+
+.item__status {
+  width: 100%;
+  color: #FFF;
+  border-radius: .25rem;
+  padding: .5rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
 .item__title--strikethrough {
   text-decoration: line-through;
 }
@@ -11,13 +43,13 @@
 }
 
 .item__status--green {
-  color: green;
+  background-color: #018101;
 }
 
 .item__status--blue {
-  color: blue;
+  background-color: #027AFE;
 }
 
 .item__status--grey {
-  color: grey;
+  background-color: #808181;
 }

@@ -5,28 +5,28 @@ export const ItemCard = ({ item }) => {
 
   const titleClass =
     status === "done"
-      ? `${styles["item__title--strikethrough"]}`
+      ? `${styles["item__title"]} ${styles["item__title--strikethrough"]}`
       : status === "in progress"
-      ? `${styles["item__title--bold"]}`
+      ? `${styles["item__title"]} ${styles["item__title--bold"]}`
       : status === "pending"
-      ? `${styles["item__title--regular"]}`
+      ? `${styles["item__title"]} ${styles["item__title--regular"]}`
       : "";
 
   const statusClass =
     status === "done"
-      ? `${styles["item__status--green"]}`
+      ? `${styles["item__status"]} ${styles["item__status--green"]}`
       : status === "in progress"
-      ? `${styles["item__status--blue"]}`
+      ? `${styles["item__status"]} ${styles["item__status--blue"]}`
       : status === "pending"
-      ? `${styles["item__status--grey"]}`
+      ? `${styles["item__status"]} ${styles["item__status--grey"]}`
       : "";
 
 
   return (
     <>
-      <li>
+      <li className={styles["itemCard__wrapper"]}>
         <h4 className={titleClass}>{title}</h4>
-        <p>{description}</p>
+        <p className={styles["item__description"]}>{description}</p>
         <span className={statusClass}>{status}</span>
       </li>
     </>
