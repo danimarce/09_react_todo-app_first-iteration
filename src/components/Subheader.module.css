@@ -1,5 +1,5 @@
 .heading__subtitle {
-  color: #e2e3e2;
+  color: var(--text-light);
   margin-bottom: 0.5rem;
   text-align: center;
   font-weight: normal;

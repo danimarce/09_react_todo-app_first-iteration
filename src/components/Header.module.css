@@ -1,5 +1,5 @@
 .heading__title {
-  color: #e2e3e2;
+  color: var(--text-light);
   text-align: center;
   margin-bottom: 0.5rem;
   font-weight: normal;

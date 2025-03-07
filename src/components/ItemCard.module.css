@@ -2,26 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #333333;
+  background-color: var(--bg-grey);
   width: 100%;
   padding: 1rem;
-  border: 2px solid #424243;
+  border: 2px solid var(--border-grey);
   border-radius: .5rem;
   gap: 1rem;
 }
 
 .item__title {
   font-size: 1.25rem;
-  color: #FFF;
+  color: var(--text-white);
 }
 
 .item__description {
-  color: #FFFEFE;
+  color: var(--text-white);
 }
 
 .item__status {
   width: 100%;
-  color: #FFF;
+  color: var(--text-white);
   border-radius: .25rem;
   padding: .5rem 0;
   text-transform: uppercase;
@@ -43,13 +43,13 @@
 }
 
 .item__status--green {
-  background-color: #018101;
+  background-color: var(--bg-green-button);
 }
 
 .item__status--blue {
-  background-color: #027AFE;
+  background-color: var(--bg-blue-button);;
 }
 
 .item__status--grey {
-  background-color: #808181;
+  background-color: var(--bg-grey-button);;
 }
