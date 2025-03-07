@@ -53,3 +53,22 @@
 .item__status--grey {
   background-color: var(--bg-grey-button);;
 }
+
+@media (prefers-color-scheme: light) {
+  .itemCard__wrapper {
+    background-color: var(--bg-white);
+    border-color: var(--border-light);
+  }
+
+  .item__title {
+    color: var(--text-black);
+  }
+
+  .item__description {
+    color: var(--text-black);
+  }
+
+  .item__status {
+    color: var(--text-black);
+  }
+}

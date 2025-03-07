@@ -2,5 +2,10 @@
   color: var(--text-light);
   text-align: center;
   margin-bottom: 0.5rem;
-  font-weight: normal;
+}
+
+@media (prefers-color-scheme: light) {
+  .heading__title {
+    color: var(--text-dark);
+  }
 }
