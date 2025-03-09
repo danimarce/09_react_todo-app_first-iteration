@@ -9,7 +9,7 @@ body {
   background-color: var(--bg-dark);
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 @media (prefers-color-scheme: light) {
